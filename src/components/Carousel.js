@@ -1,34 +1,33 @@
 import React, { useState } from 'react';
 import '../Carousel.scss';
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, selectedProject, handleProjectClick, handleMouseOver,projects }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
-
     return (
-        <div className="container">
 
-            <div className="slide">
-                <button className="prev-button" onClick={prevSlide}>
-                    &lt;
-                </button>
-                <img src={images[currentIndex]} alt={`Image ${currentIndex}`} />
-                <button className="next-button" onClick={nextSlide}>
-                    &gt;
-                </button>
+        <div className="carousel-container">
+           
+            <div className={`slide`}>
+                <img className={`${selectedProject == null ? "visible" : ""}`}src={images[currentIndex]} alt={`Image ${currentIndex}`} />
             </div>
 
+            <div className='list-container'>
+                <ul className="project-list">
+                    <p className='title'>Projets</p>
+                    {projects.map((project, index) => (
+                        <li onMouseOver={() => { handleProjectClick(index); }}
+                            onMouseOut={()=> {handleMouseOver()}}
+                            key={index}
+                            onClick={() => handleProjectClick(index)}
+                            className={index === selectedProject ? 'selected' : ''}
+                        >
+                            <span className="arrow"> ➡️</span>{project.name}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
-
 export default Carousel;

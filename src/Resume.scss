@@ -1,0 +1,12 @@
+.resume-container{
+    display: flex;
+    .left-side{
+       flex: 2; 
+       .paragraphe{
+        
+       }
+    }
+    .right-side{
+        flex: 1; 
+    }
+}
