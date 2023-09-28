@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Carousel.scss';
+import { Link } from 'react-router-dom';
 
 const Carousel = ({ images, selectedProject, handleProjectClick, handleMouseOver,projects }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +23,7 @@ const Carousel = ({ images, selectedProject, handleProjectClick, handleMouseOver
                             onClick={() => handleProjectClick(index)}
                             className={index === selectedProject ? 'selected' : ''}
                         >
-                            <span className="arrow"> ➡️</span>{project.name}
+                           <Link to={`/project/${index}`}><span className="arrow"> ➡️</span>{project.name}</Link> 
                         </li>
                     ))}
                 </ul>

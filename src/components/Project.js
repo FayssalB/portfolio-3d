@@ -16,15 +16,15 @@ const Project = () => {
   }
 
   const projects = [
-    { name: "Dash", images: ["img/DASH.png"], description: "Dash est un jeu d'ambiance" },
-    { name: "Literie3000", images: ["img/athletes.png"], description: "Commandez votre matelas de rêve" }
+    { name: "Dash (en cours)", images: ["img/DASH.png"], description: "Dash est un jeu d'ambiance" },
+    { name: "Ajout d'anciens projets bientot", images: ["img/athletes.png"], description: "Commandez votre matelas de rêve" }
   ];
 
   return (
     <div className='project-container'>
         <Header onClick={() => setModal(!modal)} visible={modal ? "visible" : "not-visible"} />
       <div className='project-container-items'>
-        <div><p>DdDDDDDDDDDDDDDDDDDDDDD</p></div>
+        <div></div>
         <Carousel images={selectedProject !== null && projects[selectedProject].images} selectedProject={selectedProject} handleProjectClick={handleProjectClick} handleMouseOver={handleMouseOver} projects={projects} />
       </div>
     </div>
