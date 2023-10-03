@@ -3,7 +3,7 @@ import Menu from './Menu.js';
 import { OrbitControls } from '@react-three/drei';
 import { useLoader, Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 
@@ -11,10 +11,25 @@ import Header from './Header';
 function Home() {
     const [modal, setModal] = useState(false);
     const [rotation, setRotation] = useState([0, 0, 0]);
-
+    const [scale, setScale] = useState(1.5)    
     const modelRef = useRef();
 
     function Bird() {
+
+        useEffect(() => {
+          const handleResize = () => {
+            const isSmallScreen = window.innerWidth <= 768;
+            {isSmallScreen ? setScale(1) : setScale(1.5)}
+          }
+        
+          return () => {
+           handleResize()
+          }
+        }, [window.innerWidth])
+        
+
+
+
         const rotateModel = () => {
             setRotation([rotation[0], rotation[1] + 0.005, rotation[2]]);
         }
@@ -27,12 +42,18 @@ function Home() {
                 modelRef.current.rotation.z = rotation[2];
             }
         })
+       
+
+
         const model = useLoader(GLTFLoader, 'turkey_called_indiushka/scene.gltf')
         return (
             <>
-                <primitive ref={modelRef} object={model.scene} scale={1.5} position={[0, -1, 0]} />
+                <primitive ref={modelRef} object={model.scene} scale={scale} position={[0, -1, 0]} />
             </>
         )
+
+        
+
     }
 
     return (
@@ -47,14 +68,14 @@ function Home() {
                 </nav>
             </header> */}
            
-                <Header onClick={() => setModal(!modal)} visible={modal ? "visible" : "not-visible"} />
+            <Header onClick={() => setModal(!modal)} visible={modal ? "visible" : "not-visible"} />
            
             <div className={`intro-container ${modal ? "noise" : ""}`}>
 
                 <div className='intro'>
                     <div>
                         <h1>
-                            Salut, Je m'appelle Fayssal Belghazi.
+                            Bonjour, je m'appelle Fayssal Belghazi.
                         </h1>
                         <p> Jeune developpeur web passionné</p>
                         <ul>
@@ -70,7 +91,7 @@ function Home() {
 
                 <div className='model-intro'>
                     <Canvas camera={{ position: [0, 0.5, 4], fov: 70, near: 0.01, far: 1000 }}>
-                        <OrbitControls />
+                        {/* <OrbitControls /> Permet de déplacer le Model*/}
                         <ambientLight />
                         <pointLight />
                         <Bird />
