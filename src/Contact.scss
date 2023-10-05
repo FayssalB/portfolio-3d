@@ -42,6 +42,7 @@
                     font-size: 15px;
                     margin-right: 15px;
                     margin-left: 15px;
+                    
                 }
             }
             .leftside {
@@ -80,6 +81,25 @@
         .noise {
             filter: blur(5px);
             pointer-events: none;
+        }
+    }
+
+}
+@media (max-width: 768px){
+    .contact-container{
+
+        .contact-infos{
+            width: 90%;
+            .sides{
+                display: flex;
+                flex-direction: column;
+                a{
+                    font-size: 15px;
+                }
+                .leftside{
+                    margin-bottom: 30px;
+                }
+            }
         }
     }
 }

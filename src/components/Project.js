@@ -17,7 +17,7 @@ const Project = () => {
 
   const projects = [
     { name: "Dash (en cours)", images: ["img/DASH.png"], description: "Dash est un jeu d'ambiance" },
-    { name: "Ajout d'anciens projets bientot", images: ["img/comingsoon.jpg"], description: "Ca arrive" }
+    { name: "(Ajout d'anciens projets bientôt)", images: ["img/comingsoon.jpg"], description: "Ca arrive" }
   ];
 
   return (

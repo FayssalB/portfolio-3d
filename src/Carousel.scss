@@ -4,24 +4,26 @@
     .slide {
 
         position: relative;
-        width: 50vw;
-        height: 70vh;
+        width: 50%;
+        height: 80vh;
         overflow: hidden;
         border-top-right-radius: 10%;
 
         .visible {
-           display: none;
+            display: none;
         }
 
         img {
             width: 100%;
             height: 100%;
             object-fit: fill;
+
             .visible {
                 display: none;
             }
         }
     }
+
     // .list-container{
     //     ul li{
 
@@ -39,4 +41,28 @@
     //     right: 0;
     //     top: 50%;
     // }
+}
+
+@media (max-width:768px) {
+    // .carousel-container {
+
+    //     .slide{
+    //        width: 100%;
+           
+    //     }
+    //     .list-container{
+    //         position: absolute;
+    //     }
+    // }
+      .carousel-container {
+
+        .slide{
+         display: none;
+           
+        }
+        .list-container{
+            
+        }
+    }
+    
 }

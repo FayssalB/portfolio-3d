@@ -1,12 +1,18 @@
-.resume-container{
+.resume-container {
     display: flex;
-    .left-side{
-       flex: 2; 
-       .paragraphe{
-        
-       }
+    flex-direction: column;
+
+    .left-side {
+        flex: 2;
+
+        .paragraphe {}
     }
-    .right-side{
-        flex: 1; 
+
+    .right-side {
+       svg{
+        width: 30px;
+       }
+
+        
     }
 }
