@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 import '../Contact.scss'
 import Header from './Header'
 import { Link } from 'react-router-dom';
+import {FaArrowRight} from 'react-icons/fa'
 
 
 export const Contact = () => {
@@ -18,10 +19,10 @@ export const Contact = () => {
         <div className='sides'>
           {/* changer la structure des "sides"  //////////////////*/}
           <div className='leftside'>
-            <p>E-mail <Link>belghazi.fayssal.prof@gmail.com</Link></p>
+            <p>E-mail <a href='mailto:belghazi.fayssal.prof@gmail.com'><FaArrowRight/>belghazi.fayssal.prof@gmail.com</a></p>
           </div>
           <div className='rightside'>
-            <p>Réseau  <a href='https://www.linkedin.com/in/fayssal-belghazi/' target="_blank" rel="noopener noreferrer">linkedin</a></p>
+            <p>Réseau  <a href='https://www.linkedin.com/in/fayssal-belghazi/' target="_blank" rel="noopener noreferrer"><FaArrowRight/>Linkedin</a></p>
           </div>
 
         </div>

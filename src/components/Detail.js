@@ -13,7 +13,7 @@ const Detail = () => {
   return (
     <div className='detail-container'>
       <Header onClick={() => setModal(!modal)} visible={modal ? "visible" : "not-visible"} />
-      <div className='detail-infos'>
+      <div className={`detail-infos ${modal ? "noise" : ""}`}>
         <div className='detail-elements'>
           <h2>{projects[id].name}</h2>
           <p>{projects[id].description}</p>

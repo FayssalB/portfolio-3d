@@ -9,7 +9,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    .noise {
+      filter: blur(5px);
+      pointer-events: none;
+  }
     .detail-elements {
       max-width: 70%;
       padding: 20px;
@@ -48,6 +51,7 @@
         }
       }
     }
+   
   }
 
   .detail-techno {

@@ -52,6 +52,13 @@
        display: inline-block;
      }
    }
+    a{
+      text-decoration: none;
+      color: #ddd;
+      &:hover{
+        color:#FFA63D;
+      }
+    }
    }
    .project-list .selected {
      font-weight: bold;
@@ -60,4 +67,10 @@
      display: none;
    }
    }
+
+  
+  .noise {
+    filter: blur(5px);
+    pointer-events: none;
+  }
 }
