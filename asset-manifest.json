@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio3d/static/css/main.b4ae4ea9.css",
+    "main.js": "/portfolio3d/static/js/main.e81282a5.js",
+    "static/js/787.4b260297.chunk.js": "/portfolio3d/static/js/787.4b260297.chunk.js",
+    "static/media/comingsoon.jpg": "/portfolio3d/static/media/comingsoon.f308e398ecab09d9a1f6.jpg",
+    "static/media/2.jpg": "/portfolio3d/static/media/2.ee7685bfffa99249fbc1.jpg",
+    "static/media/3.jpg": "/portfolio3d/static/media/3.049a0393418a74cf536e.jpg",
+    "static/media/4.jpg": "/portfolio3d/static/media/4.9fe9b58b00f005da4e48.jpg",
+    "static/media/1.jpg": "/portfolio3d/static/media/1.79041c4460ae9b57edd6.jpg",
+    "static/media/DASH.png": "/portfolio3d/static/media/DASH.dbf82d854029721cac36.png",
+    "static/media/hamburger-menu.svg": "/portfolio3d/static/media/hamburger-menu.c85aa646f0aeb868692b09382a83e579.svg",
+    "index.html": "/portfolio3d/index.html",
+    "main.b4ae4ea9.css.map": "/portfolio3d/static/css/main.b4ae4ea9.css.map",
+    "main.e81282a5.js.map": "/portfolio3d/static/js/main.e81282a5.js.map",
+    "787.4b260297.chunk.js.map": "/portfolio3d/static/js/787.4b260297.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4ae4ea9.css",
+    "static/js/main.e81282a5.js"
+  ]
+}
