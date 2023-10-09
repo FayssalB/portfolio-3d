@@ -1,27 +1,37 @@
 .resume-container {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: #121212;
     color: white;
 
     .allsides {
-        width: 70%;
-        height: 100%;
-        margin: 0 auto;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 180px;
         
         .left-side {
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
             margin-top: 50px;
             margin-bottom: 50px;
-            .paragraphe {
-                font-size: 18px;
-                line-height: 1.5;
+            h1{
+              text-transform: uppercase;
+              margin-bottom: 15px;
             }
+            hr {
+              height: 3px;
+              background-color: white;
+          }
+          p{
+            margin-top: 20px;
+            font-size: 18px;
+          }
+  
         }
 
         .right-side {
@@ -30,35 +40,44 @@
                 width: 100px;
             }
             .icon:nth-child(1){
-                color: blue;
+                color: #DD4B25;
               }
             .icon:nth-child(2) {
-                color: red;
+                color: #254BDD;
               }
             .icon:nth-child(3) {
-                color: blue;
+                color: #7377AD;
               }
             .icon:nth-child(4) {
-                color: blue;
+                color: #5ED3F3;
               }
             .icon:nth-child(5) {
-                color: blue;
+                color: #C76494;
               }
             .icon:nth-child(6) {
-                color: blue;
+                color: #2C7AC9;
               }
             .icon:nth-child(7) {
-                color: blue;
+                color: #C57A17;
               }
             .icon:nth-child(8) {
-                color: blue;
+                color: #4EAC3E;
               }
             .icon:nth-child(9) {
-                color: blue;
+                color: #EFD81D;
               }
             .icon:nth-child(10) {
-                color: blue;
+                color: #000000;
+              }
+              .icon{
+                margin-right: 15px;
               }
         }
     }
+  
+
+  .noise {
+      filter: blur(5px);
+      pointer-events: none;
+  }
 }

@@ -8,7 +8,7 @@ const Header = ({onClick , visible}) => {
             <nav>
                 <ul>
                     <li onClick={onClick}>
-                        <img className="hamburger-menu" src="/hamburger-menu.svg" />
+                        <img className="hamburger-menu" src={require("../img/hamburger-menu.svg").default} />
                     </li>
                 </ul>
             </nav>

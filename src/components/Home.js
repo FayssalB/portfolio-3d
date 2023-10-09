@@ -90,12 +90,12 @@ function Home() {
                 </div>
 
                 <div className='model-intro'>
-                    {/* <Canvas camera={{ position: [0, 0.5, 4], fov: 70, near: 0.01, far: 1000 }}>
-                        <OrbitControls /> Permet de déplacer le Model
+                    <Canvas camera={{ position: [0, 0.5, 4], fov: 70, near: 0.01, far: 1000 }}>
+                        {/* <OrbitControls /> Permet de déplacer le Model*/}
                         <ambientLight />
                         <pointLight />
                         <Bird />
-                    </Canvas> */}
+                    </Canvas>
                 </div>
 
             </div>
