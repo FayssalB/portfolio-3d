@@ -11,23 +11,26 @@ const Resume = () => {
     return (
         <div className='resume-container'>
             <Header onClick={() => setModal(!modal)} visible={modal ? "visible" : "not-visible"} />
-            <div className='left-side'>
-                <div className='paragraphe'>
-                    <p>
-                        Salut ! Je suis un passionné de code, tout juste sorti d'une formation de développeur Full Stack. Je suis prêt à explorer de nouvelles voies et à m'immerger dans le monde du développement. Ma mission ? Progresser continuellement et vivre de nouvelles expériences dans le domaine du développement, tout en créant des projets passionnants. Alors, si mon profil vous intéresse, contactez-moi.</p>
+            <div className='allsides' >
+
+                <div className='left-side'>
+                    <div className='paragraphe'>
+                        <p>
+                            Salut ! Je suis un passionné de code, tout juste sorti d'une formation de développeur Full Stack. Je suis prêt à explorer de nouvelles voies et à m'immerger dans le monde du développement. Ma mission ? Progresser continuellement et vivre de nouvelles expériences dans le domaine du développement, tout en créant des projets passionnants. Alors, si mon profil vous intéresse, contactez-moi.</p>
+                    </div>
                 </div>
-            </div>
-            <div className='right-side'>
-                <FaHtml5 className='icon' />
-                <FaCss3Alt className='icon'/>
-                <FaPhp className='icon'/>
-                <FaReact className='icon'/>
-                <FaSass className='icon'/>
-                <TbSql className='icon'/>
-                <SiMysql className='icon'/>
-                <SiMongodb className='icon'/>
-                <BiLogoJavascript className='icon'/>
-                <FaGithub className='icon'/>
+                <div className='right-side'>
+                    <FaHtml5 className='icon' />
+                    <FaCss3Alt className='icon' />
+                    <FaPhp className='icon' />
+                    <FaReact className='icon' />
+                    <FaSass className='icon' />
+                    <TbSql className='icon' />
+                    <SiMysql className='icon' />
+                    <SiMongodb className='icon' />
+                    <BiLogoJavascript className='icon' />
+                    <FaGithub className='icon' />
+                </div>
             </div>
         </div>
     )
