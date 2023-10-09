@@ -12,11 +12,16 @@
         width: 70%;
         height: 100%;
         margin: 0 auto;
-
+        
         .left-side {
-            flex: 2;
-
-            .paragraphe {}
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .paragraphe {
+                font-size: 18px;
+                line-height: 1.5;
+            }
         }
 
         .right-side {
@@ -24,8 +29,36 @@
                 height: 100px;
                 width: 100px;
             }
-            
-
+            .icon:nth-child(1){
+                color: blue;
+              }
+            .icon:nth-child(2) {
+                color: red;
+              }
+            .icon:nth-child(3) {
+                color: blue;
+              }
+            .icon:nth-child(4) {
+                color: blue;
+              }
+            .icon:nth-child(5) {
+                color: blue;
+              }
+            .icon:nth-child(6) {
+                color: blue;
+              }
+            .icon:nth-child(7) {
+                color: blue;
+              }
+            .icon:nth-child(8) {
+                color: blue;
+              }
+            .icon:nth-child(9) {
+                color: blue;
+              }
+            .icon:nth-child(10) {
+                color: blue;
+              }
         }
     }
 }

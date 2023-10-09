@@ -5,22 +5,23 @@ import { FaCss3Alt, FaGithub, FaHtml5, FaPhp, FaReact, FaSass } from 'react-icon
 import { TbSql } from "react-icons/tb";
 import { SiMysql, SiMongodb } from "react-icons/si";
 import { BiLogoJavascript } from "react-icons/bi";
-
 const Resume = () => {
     const [modal, setModal] = useState(false);
     return (
         <div className='resume-container'>
             <Header onClick={() => setModal(!modal)} visible={modal ? "visible" : "not-visible"} />
             <div className='allsides' >
-
                 <div className='left-side'>
                     <div className='paragraphe'>
-                        <p>
-                            Salut ! Je suis un passionné de code, tout juste sorti d'une formation de développeur Full Stack. Je suis prêt à explorer de nouvelles voies et à m'immerger dans le monde du développement. Ma mission ? Progresser continuellement et vivre de nouvelles expériences dans le domaine du développement, tout en créant des projets passionnants. Alors, si mon profil vous intéresse, contactez-moi.</p>
+                        <p> Salut ! Je suis Fayssal Belghazi, un développeur Full Stack avec une solide formation de chez M2i. J'ai travaillé sur divers projets dans plusieurs langages, mais j'ai une préférence particulière pour React, avec lequel j'ai réalisé de nombreux projets passionnants.
+
+                            Je suis passionné par le développement et toujours prêt à apprendre de nouvelles technologies. Ma mission est de continuer à progresser, d'explorer de nouveaux horizons et de créer des projets innovants.
+
+                            Si vous cherchez un développeur enthousiaste pour rejoindre votre équipe ou collaborer sur des projets, n'hésitez pas à me contacter. Je suis prêt à relever de nouveaux défis !</p>
                     </div>
                 </div>
                 <div className='right-side'>
-                    <FaHtml5 className='icon' />
+                    <FaHtml5 className='icon'  />
                     <FaCss3Alt className='icon' />
                     <FaPhp className='icon' />
                     <FaReact className='icon' />
@@ -35,5 +36,4 @@ const Resume = () => {
         </div>
     )
 }
-
 export default Resume;
