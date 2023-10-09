@@ -12,7 +12,7 @@ function App() {
   return (
     
       <Routes>
-        <Route path='/portfolio3d' exact Component={Home}/>
+        <Route path='/portfolio3d/' exact Component={Home}/>
         <Route path='/project' exact Component={Project}/>
         <Route path='/project/:id'  Component={Detail}/>
         <Route path='/resume' exact Component={Resume}/>
